@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-Commerce Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">ShopLogo</a>
+            <form class="search-bar" action="#" method="get">
+                <input type="text" placeholder="Search products...">
+                <button type="submit">Search</button>
+            </form>
+            <nav class="header-nav">
+                <a href="cart.html">Cart</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Books</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="Image/banner.jpg" alt="Banner 1">
+            </div>
+            <div class="slide fade">
+                <img src="Image/banner2.jpg" alt="Banner 2">
+            </div>
+            <div class="slide fade">
+                <img src="Image/banner1.jpg" alt="Banner 3">
+            </div>
+            <!-- Dots -->
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <main>
+        <section class="product-grid">
+            <article class="product-card">
+                <img src="Image/img1.png" alt="Product 1">
+                <h2>Product Name 1</h2>
+                <p class="price">$19.99</p>
+                <a href="product.html" class="btn">View Details</a>
+            </article>
+            <article class="product-card">
+                <img src="Image/img2.jpg" alt="Product 2">
+                <h2>Product Name 2</h2>
+                <p class="price">$29.99</p>
+                <a href="product.html" class="btn">View Details</a>
+            </article>
+            <article class="product-card">
+                <img src="Image/img1.png" alt="Product 1">
+                <h2>Product Name 1</h2>
+                <p class="price">$19.99</p>
+                <a href="product.html" class="btn">View Details</a>
+            </article>
+            <article class="product-card">
+                <img src="Image/img2.jpg" alt="Product 2">
+                <h2>Product Name 2</h2>
+                <p class="price">$29.99</p>
+                <a href="product.html" class="btn">View Details</a>
+            </article>
+            <article class="product-card">
+                <img src="Image/img1.png" alt="Product 1">
+                <h2>Product Name 1</h2>
+                <p class="price">$19.99</p>
+                <a href="product.html" class="btn">View Details</a>
+            </article>
+            <article class="product-card">
+                <img src="Image/img2.jpg" alt="Product 2">
+                <h2>Product Name 2</h2>
+                <p class="price">$29.99</p>
+                <a href="product.html" class="btn">View Details</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <h3>Contact Us</h3>
+                <p>Email: phongpro481@gmail.com</p>
+                <p>Phone: 0353107333</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bear/Cat Animation Overlay -->
+    <div id="bear-lottie" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.4); z-index:9999; justify-content:center; align-items:center;">
+        <div style="width:320px; margin:auto;"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
